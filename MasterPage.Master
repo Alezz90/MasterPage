@@ -1,0 +1,140 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="WebApplication1.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     
+<link rel="apple-touch-icon" sizes="76x76" href="image/apple-icon.png" />
+    
+<link rel="icon" type="image/png" href="image/favicon.png">
+
+    <!--     Fonts and icons     -->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+
+<!-- Nucleo Icons -->
+    <link href="css/nucleo-icons.css" rel="stylesheet" />
+
+    <link href="css/nucleo-svg.css" rel="stylesheet" />
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+<!-- CSS Files -->
+
+    
+<link id="pagestyle" href="css/material-dashboard.css?v=3.1.0"" rel="stylesheet" />
+<script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 252px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2" style="text-align:center">
+                        <asp:Image ID="Image1" runat="server" Height="100px" ImageUrl="~/img/forklift.png" />
+                    </td>
+                    <td style="text-align:center; background-color:antiquewhite;border-style:solid;border-color:black"><h1> Northwind </h1></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2" rowspan="4" style="clip: rect(auto, auto, auto, auto)">  
+                        
+                       
+                    <ul class="navbar-nav" style="background-color:black;text-align:left;"> 
+                        
+                     <li class="nav-item text-center">
+                     <a class="nav-link text-white " href="DashBoard.aspx">
+                       <!--icon-->
+                        
+                       <i class="material-icons opacity-10">dashboard</i>
+                      <span class="nav-link-text ms-1">Dashboard</span>
+                      </a>
+                     </li>
+
+                     <li class="nav-item text-center">
+                     <a class="nav-link text-white " href="">
+                     <i class="material-symbols-outlined">inventory_2</i>
+                     <span class="nav-link-text ms-1">Product</span>
+                     </a>
+                      </li>
+
+                     <li class="nav-item text-center">
+                     <a class="nav-link text-white " href="#">
+                     <i class="material-symbols-outlined opacity-10">group</i>
+                     <span class="nav-link-text ms-1">Customer</span>
+                      </a>
+                         </li>
+                       <li class="nav-item text-center">
+                     <a class="nav-link text-white " href="LoginPage.aspx">
+                    <i class="material-icons opacity-10">login</i>
+                    <span class="nav-link-text ms-1">Sign In</span>
+                         <asp:Label ID="lblUserName" runat="server" Text="Label"></asp:Label>
+  </a>
+</li>
+
+  
+                     <li class="nav-item text-center">
+                     <a class="nav-link text-white " href="DashBoard.aspx">
+                      <i class="material-icons opacity-10">assignment</i>
+                      <span class="nav-link-text ms-1">Regester</span>
+                         </a>
+                           </li>
+                                </ul>
+ 
+                    </td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" >
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <script src="js/core/bootstrap.bundle.min.js"></script>
+    <script src="js/core/bootstrap.min.js"></script>
+    <script src="js/core/popper.min.js"></script>
+    <script src="js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="js/plugins/smooth-scrollbar.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+<!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+   
+    <script src="js/material-dashboard.min.js?v=3.1.0"></script>
+</body>
+</html>
